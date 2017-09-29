@@ -15,3 +15,68 @@
  *= require foundation_and_overrides
 
  */
+
+ body {
+ 	background-image: url('https://c1.staticflickr.com/9/8657/16539302705_54be8b9456_k.jpg');
+ 	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+
+ }
+
+ .sivupalkki{
+ 	background:pink;
+
+ }
+
+ .otsikko-wrapper {
+ 	margin-top: $global-margin;
+ 	background: skyblue;
+ 	border-radius: 100%;
+ 	padding: 0.7rem;
+ 	overflow: hidden;
+ }
+
+ .otsikko-kuva {
+ 	position: relative;
+ 	border-radius: 100%;
+ 	overflow: hidden;
+ }
+
+ .sivupalkki h1 {
+ 	position: absolute;
+ 	top: 12rem;
+ 	left: 0;
+ 	width: 100%;
+ 	text-align: center;
+ 	color: white;
+ 	font: bold 24px/45px Helvetica, Sans-Serif;
+ 	letter-spacing: -1px;
+ 	background: rgb(0, 0, 0); /* fallback color */
+ 	background: rgba(0, 0, 0, 0.7);
+ 	padding: 10px;
+ }
+
+
+ ul{
+ 	margin: $global-margin; 	
+ }
+
+ li{
+ 	background: yellow;
+ 	border: 1px solid pink;
+ 	border-radius: 10px; 	
+ }
+
+ li:hover{
+ 	background: skyblue;
+ }
+
+
+.tervehdysboksi{
+	margin: $global-margin;
+}
+
+.sisalto {
+	background-color: white;
+	padding: 3rem;
+}

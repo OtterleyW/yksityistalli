@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Virtuaalitalli" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
@@ -13,7 +13,59 @@
 
   <body>
 
-    <%= yield %>
+    <div class="row">
+      <div class="small-3 columns sivupalkki">
+        <div class="row small-up-1">
+          <div class="column column-block">
+            <div class="otsikko-wrapper">
+              <div class="otsikko-kuva">
+                <img
+                  src="http://www.salaovi.net/hukkapuro/img/koriste/heppakuva.jpg"
+              
+                  alt=""
+                />
+                <h1>Talli jeejeekrokotiili</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <ul class="menu vertical align-center">
+            <li>
+              <%= link_to 'Etusivu', controller: 'welcome' %>
+            </li>
+            <li>
+              <Link href="/about">Esittely</Link>
+            </li>
+            <li>
+              <Link href="/hevoset">Asukkaat</Link>
+            </li>
+            <li>
+              <Link href="/">Toiminta</Link>
+            </li>
+            <li>
+              <%= link_to 'Tallipäiväkirja', controller: 'articles' %>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="tervehdysboksi">
+        <p>
+        Tervetuloa <b>Herkko Hepanomistaja</b><br />
+        <small>Kirjaudu ulos</small>
+        </p>
+        <p>
+        &raquo; <%= link_to 'Kirjoita tallipäiväkirjaan', new_article_path %><br />
+        &raquo; Oma kaappi<br />
+        &raquo; Hevosen tiedot<br />
+        </p>
+        </div>
+      </div>
+      <div class="small-9 columns sisalto"> <%= yield %></div>
+    </div>
+
+  
 
   </body>
 </html>
