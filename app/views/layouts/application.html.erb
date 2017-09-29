@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Virtuaalitalli" %></title>
+    <title><%= yield(:title) %> | Virtuaalitalli</title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
@@ -33,7 +33,7 @@
         <nav>
           <ul class="menu vertical align-center">
             <li>
-              <%= link_to 'Etusivu', controller: 'welcome' %>
+              Etusivu
             </li>
             <li>
               <Link href="/about">Esittely</Link>

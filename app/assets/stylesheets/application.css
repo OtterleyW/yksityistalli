@@ -29,7 +29,7 @@
  }
 
  .otsikko-wrapper {
- 	margin-top: $global-margin;
+ 	margin-top: 1rem;
  	background: skyblue;
  	border-radius: 100%;
  	padding: 0.7rem;
@@ -58,7 +58,7 @@
 
 
  ul{
- 	margin: $global-margin; 	
+ 	margin: 1rem; 	
  }
 
  li{
@@ -73,7 +73,7 @@
 
 
 .tervehdysboksi{
-	margin: $global-margin;
+	margin: 1rem;
 }
 
 .sisalto {
