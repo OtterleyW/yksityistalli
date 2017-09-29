@@ -56,3 +56,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Foundation
 gem 'foundation-rails', '~> 6.4'
 
+gem 'rails-controller-testing'
